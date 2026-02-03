@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h1>Grinding Dashboard</h1>
+        <i class="ri-sun-line"></i>
+      </nav>
+
+      <section class="weather">
+        <img
+          src="https://assamtribune.com/h-upload/2022/03/01/1330873-clouds-weather.webp"
+          alt=""
+        />
+        <div class="left">
+          <h2 id="temp"></h2>
+          <p id="loctn"></p>
+        </div>
+        <div class="right">
+          <h2 id="time"></h2>
+          <div class="txt">
+            <h2 id="day"></h2>
+            <h2 id="date"></h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="allElems">
+        <div class="todo card" id="0">
+          <img
+            src="https://preview.redd.it/the-real-meaning-of-wss-title-v0-34b6jitig42f1.jpeg?width=640&crop=smart&auto=webp&s=6cb3dcfa80836213d0c2b2e8cd3219d135741743"
+            alt=""
+          />
+          <h2>To-Do List</h2>
+        </div>
+        <div class="planner card" id="1">
+          <img
+            src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842890c5eae3a87be9b187befa"
+            alt=""
+          />
+          <h2>Daily Planner</h2>
+        </div>
+        <div class="motivation card" id="2">
+          <img
+            src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2019/07/Rock-Lee-battered-bloody-left-arm.jpg?q=50&fit=crop&w=825&dpr=1.5"
+            alt=""
+          />
+          <h2>Motivation</h2>
+        </div>
+        <div class="timer card" id="3">
+          <img
+            src="https://img.allfootballapp.com/www/M00/75/FE/720x-/-/-/rB8ApF66Zf-AEfcdAAVIOf7sDaE421.jpg.webp"
+            alt=""
+          />
+          <h2 id="pomo-timer">Pomodoro Timer</h2>
+        </div>
+        <div class="goals card" id="4">
+          <img
+            src="https://i1.sndcdn.com/artworks-A1iXVCWbDp0UJbBL-6mIWFA-t500x500.jpg"
+            alt=""
+          />
+          <h2>Daily Goals</h2>
+        </div>
+      </section>
+
+      <section class="fullElems" id="1">
+        <h1>
+          "I refuse to let my past dictate my future!" –
+          <span id="rock-lee">Roronoa Zoro</span>
+        </h1>
+        <button class="close">CLOSE</button>
+
+        <div class="task-container">
+          <div class="left">
+            <form class="form">
+              <label for="taskInput" id="one">Add a new task</label>
+              <input type="text" id="taskInput" placeholder="Enter Task..." />
+              <textarea
+                name="textarea"
+                id="textArea"
+                placeholder="Enter ur details of task..."
+              ></textarea>
+              <div class="check">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox" id="two">Mark as Important</label>
+              </div>
+              <button id="formBtn">ADD TASK</button>
+            </form>
+          </div>
+          <div class="right-tasklist"></div>
+        </div>
+      </section>
+
+      <section class="fullElems" id="2">
+        <h1>Daily Planner</h1>
+        <h3>
+          If you’re not planning to surpass your limits, why start the day at
+          all?- <span>Vegeta</span>
+        </h3>
+        <button class="close">CLOSE</button>
+
+        <div class="daily-planner"></div>
+      </section>
+
+      <section class="fullElems motivationPage" id="3">
+        <h2>Motivation</h2>
+        <h3>Hard Work: My Real Strength!- <span>Rock Lee</span></h3>
+        <button class="close">CLOSE</button>
+
+        <div class="quote-container">
+          <div class="top-bar">
+            <div class="mac">
+              <div class="circle one"></div>
+              <div class="circle two"></div>
+              <div class="circle three"></div>
+            </div>
+
+            <div class="rectangle"></div>
+          </div>
+          <i class="ri-double-quotes-l"></i>
+          <div class="data"></div>
+        </div>
+      </section>
+
+      <section class="fullElems" id="4">
+        <h1>Pomodoro Timer</h1>
+        <button class="close">CLOSE</button>
+
+        <div class="pomo-container">
+          <button id="state">READY TO GRIND?</button>
+          <h1>25:00</h1>
+
+          <div class="bottom-btn">
+            <button class="start-timer">Start</button>
+            <button class="pause-timer">Pause</button>
+            <button class="reset-timer">Reset</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="fullElems" id="5">
+        <h1>Daily Goals</h1>
+        <button class="close">CLOSE</button>
+
+        <div class="main">
+          <div class="suggest">
+            <h1>What research suggests?</h1>
+            <p>
+              One study found people often set 4–5 goals for a day, but those
+              who limited themselves to around 3 had the highest success rate in
+              actually completing them.
+            </p>
+          </div>
+
+          <div class="goals-container">
+            <div class="status">
+              <div class="top-box">
+                <div class="div">TOTAL GOALS</div>
+                <div class="div">6</div>
+                <div class="div">set today</div>
+              </div>
+              <div class="top-box">
+                <div class="div">COMPLETED</div>
+                <div class="div">2</div>
+                <div class="div">well done!</div>
+              </div>
+              <div class="top-box">
+                <div class="div">Remaining</div>
+                <div class="div">4</div>
+                <div class="div">keep going</div>
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="task-adder">
+                <input type="text" placeholder="Write your goal..." id="text" />
+                <button class="add">+Add</button>
+              </div>
+
+              <div class="data-container">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
